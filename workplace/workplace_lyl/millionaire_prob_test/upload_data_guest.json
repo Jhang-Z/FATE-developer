@@ -1,0 +1,8 @@
+{
+    "file": "/data/projects/fate/workplace_lyl/data/millionaire_prob_test_guest.csv", 
+	"head": 1,
+	"partition": 4, 
+	"work_mode": 1, 
+    "table_name": "millionaire_prob_test_guest",
+    "namespace": "test"
+}

@@ -1,0 +1,102 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/eee/standalone_fate_install_1.7.2_release/fate/python/federatedml/ABY/CPP/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_3ba6b/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_3ba6b.dir/build.make CMakeFiles/cmTC_3ba6b.dir/build
+gmake[1]: Entering directory `/home/eee/standalone_fate_install_1.7.2_release/fate/python/federatedml/ABY/CPP/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_3ba6b.dir/CheckSymbolExists.cxx.o
+/opt/rh/devtoolset-8/root/usr/bin/c++    -fPIE   -o CMakeFiles/cmTC_3ba6b.dir/CheckSymbolExists.cxx.o -c /home/eee/standalone_fate_install_1.7.2_release/fate/python/federatedml/ABY/CPP/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Linking CXX executable cmTC_3ba6b
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3ba6b.dir/link.txt --verbose=1
+/opt/rh/devtoolset-8/root/usr/bin/c++       CMakeFiles/cmTC_3ba6b.dir/CheckSymbolExists.cxx.o  -o cmTC_3ba6b 
+CMakeFiles/cmTC_3ba6b.dir/CheckSymbolExists.cxx.o: In function `main':
+CheckSymbolExists.cxx:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [cmTC_3ba6b] Error 1
+gmake[1]: Leaving directory `/home/eee/standalone_fate_install_1.7.2_release/fate/python/federatedml/ABY/CPP/build/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_3ba6b/fast] Error 2
+
+File /home/eee/standalone_fate_install_1.7.2_release/fate/python/federatedml/ABY/CPP/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/eee/standalone_fate_install_1.7.2_release/fate/python/federatedml/ABY/CPP/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_61ee1/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_61ee1.dir/build.make CMakeFiles/cmTC_61ee1.dir/build
+gmake[1]: Entering directory `/home/eee/standalone_fate_install_1.7.2_release/fate/python/federatedml/ABY/CPP/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_61ee1.dir/CheckFunctionExists.cxx.o
+/opt/rh/devtoolset-8/root/usr/bin/c++    -DCHECK_FUNCTION_EXISTS=pthread_create -fPIE   -o CMakeFiles/cmTC_61ee1.dir/CheckFunctionExists.cxx.o -c /home/eee/standalone_fate_install_1.7.2_release/fate/python/federatedml/ABY/CPP/build/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_61ee1
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_61ee1.dir/link.txt --verbose=1
+/opt/rh/devtoolset-8/root/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_61ee1.dir/CheckFunctionExists.cxx.o  -o cmTC_61ee1 -lpthreads 
+/opt/rh/devtoolset-8/root/usr/libexec/gcc/x86_64-redhat-linux/8/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [cmTC_61ee1] Error 1
+gmake[1]: Leaving directory `/home/eee/standalone_fate_install_1.7.2_release/fate/python/federatedml/ABY/CPP/build/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_61ee1/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /data/projects/fate/fate/python/federatedml/ABY/CPP/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_46888/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_46888.dir/build.make CMakeFiles/cmTC_46888.dir/build
+gmake[1]: 进入目录“/data/projects/fate/fate/python/federatedml/ABY/CPP/build/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_46888.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -fPIE   -o CMakeFiles/cmTC_46888.dir/CheckSymbolExists.cxx.o -c /data/projects/fate/fate/python/federatedml/ABY/CPP/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Linking CXX executable cmTC_46888
+/usr/local/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_46888.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_46888.dir/CheckSymbolExists.cxx.o  -o cmTC_46888 
+CMakeFiles/cmTC_46888.dir/CheckSymbolExists.cxx.o：在函数‘main’中：
+CheckSymbolExists.cxx:(.text+0x1b)：对‘pthread_create’未定义的引用
+collect2: 错误：ld 返回 1
+gmake[1]: *** [CMakeFiles/cmTC_46888.dir/build.make:87：cmTC_46888] 错误 1
+gmake[1]: 离开目录“/data/projects/fate/fate/python/federatedml/ABY/CPP/build/CMakeFiles/CMakeTmp”
+gmake: *** [Makefile:121：cmTC_46888/fast] 错误 2
+
+File /data/projects/fate/fate/python/federatedml/ABY/CPP/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /data/projects/fate/fate/python/federatedml/ABY/CPP/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_86990/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_86990.dir/build.make CMakeFiles/cmTC_86990.dir/build
+gmake[1]: 进入目录“/data/projects/fate/fate/python/federatedml/ABY/CPP/build/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_86990.dir/CheckFunctionExists.cxx.o
+/usr/bin/c++    -DCHECK_FUNCTION_EXISTS=pthread_create -fPIE   -o CMakeFiles/cmTC_86990.dir/CheckFunctionExists.cxx.o -c /data/projects/fate/fate/python/federatedml/ABY/CPP/build/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_86990
+/usr/local/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_86990.dir/link.txt --verbose=1
+/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_86990.dir/CheckFunctionExists.cxx.o  -o cmTC_86990 -lpthreads 
+/usr/bin/ld: 找不到 -lpthreads
+collect2: 错误：ld 返回 1
+gmake[1]: *** [CMakeFiles/cmTC_86990.dir/build.make:87：cmTC_86990] 错误 1
+gmake[1]: 离开目录“/data/projects/fate/fate/python/federatedml/ABY/CPP/build/CMakeFiles/CMakeTmp”
+gmake: *** [Makefile:121：cmTC_86990/fast] 错误 2
+
+

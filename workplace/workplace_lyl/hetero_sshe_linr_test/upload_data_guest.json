@@ -1,0 +1,8 @@
+{
+    "file": "/data/projects/fate/workplace_lyl/hetero_sshe_linr_test/data/hetero_sshe_linr_test_guest.csv", 
+	"head": 1,
+	"partition": 4, 
+    "work_mode": 1,
+    "table_name": "hetero_sshe_linr_test_guest",
+    "namespace": "test"    
+}

@@ -1,0 +1,9 @@
+//upload_guest.json
+{
+    "file": "./breast_hetero_guest.csv",
+    "head": 1,
+    "partition": 10,
+    "work_mode": 1,
+    "namespace": "table_guest",
+    "table_name": "breast_hetero_guest"
+  }

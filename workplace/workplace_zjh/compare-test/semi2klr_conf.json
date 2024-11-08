@@ -1,0 +1,90 @@
+{
+    "dsl_version": 2,
+    "initiator": {
+        "role": "guest",
+        "party_id": 9999
+    },
+    "role": {
+        "host": [
+            10000
+        ],
+        "guest": [
+            9999
+        ]
+    },
+    "component_parameters": {
+        "role": {
+            "guest": {
+                "0": {
+                    "reader_0": {
+                        "table": {
+                            "name": "train_guest",
+                            "namespace": "train"
+                        }
+                    },
+                    "data_transform_0": {
+                        "with_label": true
+                    },
+                    "reader_1": {
+                        "table": {
+                            "name": "test_guest",
+                            "namespace": "test"
+                        }
+                    }
+                }
+            },
+            "host": {
+                "0": {
+                    "reader_0": {
+                        "table": {
+                            "name": "train_host",
+                            "namespace": "train"
+                        }
+                    },
+                    "data_transform_0": {
+                        "with_label": false
+                    },
+                    "reader_1": {
+                        "table": {
+                            "name": "test_host",
+                            "namespace": "test"
+                        }
+                    }
+                }
+            }
+        },
+        "common": {
+            "data_transform_0": {
+                "output_format": "dense"
+            },
+            "data_transform_1": {
+                "output_format": "dense"
+            },
+            "Semi2klr_0": {
+                "penalty": "L2",
+                "tol": 0.0001,
+                "alpha": 0.01,
+                "optimizer": "sgd",
+                "batch_size": 128,
+                "learning_rate": 0.15,
+                "init_param": {
+                    "init_method": "zeros"
+                },
+                "max_iter": 10,
+                "early_stop": "diff",
+                "callback_param": {
+                    "callbacks": [
+                        "EarlyStopping",
+                        "PerformanceEvaluate"
+                    ]
+
+                },
+                "reveal_strategy": "respectively",
+                "reveal_every_iter": true
+            },
+            "evaluation_0": {
+                "eval_type": "binary"
+            }
+        }
+    }
+}

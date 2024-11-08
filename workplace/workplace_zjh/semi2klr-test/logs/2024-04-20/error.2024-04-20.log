@@ -1,0 +1,1 @@
+2024-04-20 13:35:08 [1;31mERROR[0;39m [Thread-653] (LogService.java:120) - websocket send error: {data={componentInfo=506}, type=logSize}

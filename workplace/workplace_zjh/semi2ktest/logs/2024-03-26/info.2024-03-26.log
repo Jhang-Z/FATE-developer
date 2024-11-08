@@ -1,0 +1,3 @@
+2024-03-26 08:00:19 [34mINFO [0;39m [SpringContextShutdownHook] (ExecutorConfigurationSupport.java:208) - Shutting down ExecutorService 'asyncServiceExecutor'
+2024-03-26 08:00:20 [34mINFO [0;39m [SpringContextShutdownHook] (HikariDataSource.java:350) - HikariPool-1 - Shutdown initiated...
+2024-03-26 08:00:21 [34mINFO [0;39m [SpringContextShutdownHook] (HikariDataSource.java:352) - HikariPool-1 - Shutdown completed.

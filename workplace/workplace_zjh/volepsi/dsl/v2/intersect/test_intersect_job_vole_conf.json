@@ -1,0 +1,74 @@
+{
+    "dsl_version": 2,
+    "initiator": {
+        "role": "guest",
+        "party_id": 9999
+    },
+    "role": {
+        "guest": [
+            9999
+        ],
+        "host": [
+            10000
+        ]
+    },
+    "component_parameters": {
+        "role": {
+            "host": {
+                "0": {
+                    "reader_0": {
+                        "table": {
+                            "name": "intersect_host",
+                            "namespace": "experiment"
+                        }
+                    },
+                    "data_transform_0": {
+                        "with_label": false,
+                        "output_format": "dense"
+                    },
+                    "intersect_0": {
+                        "intersect_method": "vole",
+                        "sync_intersect_ids": true,
+                        "vole_params": {
+                            "salt": "12345",
+                            "threat_num": 1,
+                            "is_server": true,
+                            "ip_addr":"192.168.40.171:11090",
+                            "is_malicious": false,
+                            "stat_sec_param": 40
+                        },
+                        "only_output_key": true
+                    }
+                }
+            },
+            "guest": {
+                "0": {
+                    "reader_0": {
+                        "table": {
+                            "name": "intersect_guest",
+                            "namespace": "experiment"
+                        }
+                    },
+                    "data_transform_0": {
+                        "with_label": false,
+                        "output_format": "dense"
+                    },
+                    "intersect_0": {
+                        "intersect_method": "vole",
+                        "sync_intersect_ids": true,
+                        "vole_params": {
+                            "salt": "12345",
+                            "seed_str": "atest",
+                            "threat_num": 1,
+                            "is_server": false,
+                            "ip_addr":"192.168.40.171:11090",
+                            "is_malicious": false,
+                            "stat_sec_param": 40
+                        },
+                        "only_output_key": true
+                    }
+                }
+            }
+        }
+    }
+}

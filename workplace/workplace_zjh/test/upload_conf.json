@@ -1,0 +1,8 @@
+{
+    "file": "./breast_hetero_guest.csv",
+    "head": 1,
+    "partition": 10,
+    "work_mode": 0,
+    "namespace": "experiment",
+    "table_name": "breast_hetero_guest"
+}

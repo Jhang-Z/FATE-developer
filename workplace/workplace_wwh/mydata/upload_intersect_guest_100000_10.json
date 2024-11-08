@@ -1,0 +1,7 @@
+{
+    "file": "/data/projects/fate/workplace_wwh/mydata/intersect_guest_100000_10.csv",
+    "head": 1,
+    "partition": 4,
+    "namespace": "experiment",
+    "table_name": "intersect_guest_100000_10"
+}

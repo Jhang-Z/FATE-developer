@@ -1,0 +1,8 @@
+{
+    "file": "../csdn_test/housing_2_train.csv",
+    "head": 1,
+    "partition": 8,
+    "work_mode": 0,
+    "table_name": "homo_housing_2_train",
+    "namespace": "homo_guest_housing_train"
+}

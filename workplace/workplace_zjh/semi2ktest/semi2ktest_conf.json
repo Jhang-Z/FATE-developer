@@ -1,0 +1,59 @@
+{
+    "dsl_version": 2,
+    "initiator": {
+        "role": "guest",
+        "party_id": 9999
+    },
+    "role": {
+        "guest": [
+            9999
+        ],
+        "host": [
+            10000
+        ]
+    },
+    "job_parameters": {
+        "common": {
+            "job_type": "train"
+            
+        }
+    },
+    "component_parameters": {
+        "role": {
+            "host": {
+                "0": {
+                    "semi2ktest_0": {
+                        "semi2k_role": "server",
+                        "num": 100
+                    },
+                    "reader_0": {
+                        "table": {
+                            "name": "breast_hetero_host",
+                            "namespace": "table_host"
+                        }
+                    }
+                }
+            },
+            "guest": {
+                "0": {
+                    "semi2ktest_0": {
+                        "semi2k_role": "client",
+                        "num": 77
+                    },
+                    "reader_0": {
+                        "table": {
+                            "name": "breast_hetero_guest",
+                            "namespace": "table_guest"
+                        }
+                    }
+                }
+            }
+        },
+        "common": {
+            "semi2ktest_0": {
+                "address": "0.0.0.0",
+                "port": 7766
+            }
+        }
+    }
+}

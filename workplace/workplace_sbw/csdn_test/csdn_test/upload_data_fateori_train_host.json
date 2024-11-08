@@ -1,0 +1,9 @@
+{
+    "file": "../examples/data/breast_hetero_mini_guest.csv",
+    "head": 1,
+    "partition": 8,
+    "work_mode": 0,
+    "table_name": "breast_2_train",
+    "namespace": "guest_breast_train"
+}
+

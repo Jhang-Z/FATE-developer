@@ -1,0 +1,40 @@
+{
+    "dsl_version": 2,
+    "initiator": {
+        "role": "guest",
+        "party_id": 9999
+    },
+    "role": {
+        "guest": [
+            9999
+        ]
+    },
+    "component_parameters": {
+        "common": {
+            "Semi2k": {
+                    "param1": 7,
+		    "param2": 0.1
+            }
+        },
+        "role": {
+            "guest": {
+                "0": {
+                    "reader_0": {
+                        "table": {
+                            "name": "test_data",
+                            "namespace": "test"
+                        }
+                    },
+                    "data_transform_0": {
+                        "with_label": true,
+                        "output_format": "dense"
+                    },
+                    "data_transform_1": {
+                        "with_label": true,
+                        "output_format": "dense"
+                    }
+                }
+            }
+	}
+    }
+}

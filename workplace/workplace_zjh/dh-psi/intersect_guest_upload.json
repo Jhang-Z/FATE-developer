@@ -1,0 +1,7 @@
+{
+    "file": "./intersect_guest.csv",
+    "head": 1,
+    "partition": 4,
+    "namespace": "experiment",
+    "table_name": "intersect_guest"
+}

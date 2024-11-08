@@ -1,0 +1,8 @@
+{
+    "file": "./test_guest.csv",
+    "head": 1,
+    "partition": 10,
+    "work_mode": 1,
+    "namespace": "test",
+    "table_name": "test_guest"
+  }
